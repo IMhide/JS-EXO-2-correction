@@ -7,7 +7,7 @@ describe("Gilded Rose", function() {
       let items, gildedRose;
 
       beforeEach(() => {
-        gildedRose = new Shop([ new Item("Normal Item", 10, 10) ]);
+        gildedRose = new Shop([ Item.for("Normal Item", 10, 10) ]);
         items = gildedRose.updateQuality();
       });
 
@@ -24,7 +24,7 @@ describe("Gilded Rose", function() {
       let items, gildedRose;
 
       beforeEach(() => {
-        gildedRose = new Shop([ new Item("Normal Item", -1, 10) ]);
+        gildedRose = new Shop([ Item.for("Normal Item", -1, 10) ]);
         items = gildedRose.updateQuality();
       });
 
@@ -43,7 +43,7 @@ describe("Gilded Rose", function() {
       let items, gildedRose;
 
       beforeEach(() => {
-        gildedRose = new Shop([ new Item("Aged Brie", 10, 10) ]);
+        gildedRose = new Shop([ Item.for("Aged Brie", 10, 10) ]);
         items = gildedRose.updateQuality();
       });
 
@@ -60,7 +60,7 @@ describe("Gilded Rose", function() {
       let items, gildedRose;
 
       beforeEach(() => {
-        gildedRose = new Shop([ new Item("Aged Brie", -1, 10) ]);
+        gildedRose = new Shop([ Item.for("Aged Brie", -1, 10) ]);
         items = gildedRose.updateQuality();
       });
 
@@ -79,7 +79,7 @@ describe("Gilded Rose", function() {
       let items, gildedRose;
 
       beforeEach(() => {
-        gildedRose = new Shop([ new Item("Sulfuras, Hand of Ragnaros", 10, 80) ]);
+        gildedRose = new Shop([ Item.for("Sulfuras, Hand of Ragnaros", 10, 80) ]);
         items = gildedRose.updateQuality();
       });
 
@@ -96,7 +96,7 @@ describe("Gilded Rose", function() {
       let items, gildedRose;
 
       beforeEach(() => {
-        gildedRose = new Shop([ new Item("Sulfuras, Hand of Ragnaros", -1, 80) ]);
+        gildedRose = new Shop([ Item.for("Sulfuras, Hand of Ragnaros", -1, 80) ]);
         items = gildedRose.updateQuality();
       });
 
@@ -115,7 +115,7 @@ describe("Gilded Rose", function() {
       let items, gildedRose;
 
       beforeEach(() => {
-        gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 15, 10) ]);
+        gildedRose = new Shop([ Item.for("Backstage passes to a TAFKAL80ETC concert", 15, 10) ]);
         items = gildedRose.updateQuality();
       });
 
@@ -132,7 +132,7 @@ describe("Gilded Rose", function() {
       let items, gildedRose;
 
       beforeEach(() => {
-        gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 9, 10) ]);
+        gildedRose = new Shop([ Item.for("Backstage passes to a TAFKAL80ETC concert", 9, 10) ]);
         items = gildedRose.updateQuality();
       });
 
@@ -149,7 +149,7 @@ describe("Gilded Rose", function() {
       let items, gildedRose;
 
       beforeEach(() => {
-        gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 4, 10) ]);
+        gildedRose = new Shop([ Item.for("Backstage passes to a TAFKAL80ETC concert", 4, 10) ]);
         items = gildedRose.updateQuality();
       });
 
@@ -166,7 +166,7 @@ describe("Gilded Rose", function() {
       let items, gildedRose;
 
       beforeEach(() => {
-        gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", -1, 10) ]);
+        gildedRose = new Shop([ Item.for("Backstage passes to a TAFKAL80ETC concert", -1, 10) ]);
         items = gildedRose.updateQuality();
       });
 
@@ -185,7 +185,7 @@ describe("Gilded Rose", function() {
       let items, gildedRose;
 
       beforeEach(() => {
-        gildedRose = new Shop([ new Item("Conjured Mana Cake", 10, 10) ]);
+        gildedRose = new Shop([ Item.for("Conjured Mana Cake", 10, 10) ]);
         items = gildedRose.updateQuality();
       });
 
@@ -202,7 +202,7 @@ describe("Gilded Rose", function() {
       let items, gildedRose;
 
       beforeEach(() => {
-        gildedRose = new Shop([ new Item("Conjured Mana Cake", -1, 10) ]);
+        gildedRose = new Shop([ Item.for("Conjured Mana Cake", -1, 10) ]);
         items = gildedRose.updateQuality();
       });
 
@@ -215,6 +215,4 @@ describe("Gilded Rose", function() {
       });
     });
   });
-
-
 });
